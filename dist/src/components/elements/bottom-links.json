@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_elements_bottom_links",
+    "info": {
+        "displayName": "bottomLinks"
+    },
+    "options": {},
+    "attributes": {
+        "icon": {
+            "type": "enumeration",
+            "enum": [
+                "location",
+                "mail",
+                "phone"
+            ]
+        },
+        "text": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

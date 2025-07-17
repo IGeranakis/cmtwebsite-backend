@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_vertical_accordion_blocks",
+  "info": {
+    "displayName": "VerticalAccordionBlock"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "component": "blocks.vertical-accordion-item",
+      "repeatable": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "white"
+      ]
+    }
+  },
+  "config": {}
+}

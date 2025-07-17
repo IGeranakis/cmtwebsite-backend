@@ -1,0 +1,20 @@
+{
+    "collectionName": "components_elements_service_accordion_items",
+    "info": {
+        "displayName": "serviceAccordionItem"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "config": {}
+}

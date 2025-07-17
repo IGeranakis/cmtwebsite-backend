@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_blocks_info_blocks",
+  "info": {
+    "displayName": "info Block"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "headline": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "bg-black",
+        "bg-red-600"
+      ]
+    }
+  },
+  "config": {}
+}

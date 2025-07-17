@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_blocks_vertical_accordion_items",
+    "info": {
+        "displayName": "VerticalAccordionItem"
+    },
+    "options": {},
+    "attributes": {
+        "order": {
+            "type": "integer"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "cta": {
+            "type": "component",
+            "component": "elements.link",
+            "repeatable": false
+        }
+    },
+    "config": {}
+}

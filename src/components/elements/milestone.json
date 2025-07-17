@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_milestones",
+  "info": {
+    "displayName": "milestone"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "biginteger"
+    }
+  },
+  "config": {}
+}
