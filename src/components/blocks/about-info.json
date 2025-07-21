@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_about_infos",
+  "info": {
+    "displayName": "About Info"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

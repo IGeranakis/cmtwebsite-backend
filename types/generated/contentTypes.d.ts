@@ -400,6 +400,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     description: Schema.Attribute.Text;
     featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     image: Schema.Attribute.Media<'images'>;
+    imageAuthor: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -499,7 +500,13 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
   };
   attributes: {
     blocks: Schema.Attribute.DynamicZone<
-      ['blocks.info-block', 'blocks.hero-section', 'blocks.featured-article']
+      [
+        'blocks.info-block',
+        'blocks.hero-section',
+        'blocks.featured-article',
+        'blocks.about-section',
+        'blocks.about-info',
+      ]
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -22,7 +22,9 @@
             "components": [
                 "blocks.info-block",
                 "blocks.hero-section",
-                "blocks.featured-article"
+                "blocks.featured-article",
+                "blocks.about-section",
+                "blocks.about-info"
             ]
         },
         "slug": {

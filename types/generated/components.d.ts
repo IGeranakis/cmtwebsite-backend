@@ -1,5 +1,28 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BlocksAboutInfo extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_about_infos';
+  info: {
+    displayName: 'About Info';
+  };
+  attributes: {
+    content: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlocksAboutSection extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_about_sections';
+  info: {
+    displayName: 'About Section';
+  };
+  attributes: {
+    description: Schema.Attribute.RichText;
+    infographic: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface BlocksFeaturedArticle extends Struct.ComponentSchema {
   collectionName: 'components_blocks_featured_articles';
   info: {
@@ -294,6 +317,8 @@ export interface LayoutHeader extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'blocks.about-info': BlocksAboutInfo;
+      'blocks.about-section': BlocksAboutSection;
       'blocks.featured-article': BlocksFeaturedArticle;
       'blocks.features-block': BlocksFeaturesBlock;
       'blocks.full-image': BlocksFullImage;

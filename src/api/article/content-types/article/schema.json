@@ -24,6 +24,13 @@
     "author": {
       "type": "string"
     },
+    "imageAuthor": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "image": {
       "type": "media",
       "multiple": false,

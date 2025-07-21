@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_blocks_about_sections",
+    "info": {
+        "displayName": "About Section"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "infographic": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        }
+    },
+    "config": {}
+}
