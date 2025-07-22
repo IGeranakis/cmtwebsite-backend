@@ -10,6 +10,9 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "heading": {
+      "type": "string"
     }
   },
   "config": {}

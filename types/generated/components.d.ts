@@ -7,6 +7,7 @@ export interface BlocksAboutInfo extends Struct.ComponentSchema {
   };
   attributes: {
     content: Schema.Attribute.RichText;
+    heading: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }
@@ -151,6 +152,18 @@ export interface BlocksServicesAccordionBlock extends Struct.ComponentSchema {
   attributes: {
     heading: Schema.Attribute.String;
     items: Schema.Attribute.Component<'elements.service-accordion-item', true>;
+  };
+}
+
+export interface BlocksStickyMenu extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_sticky_menus';
+  info: {
+    displayName: 'Sticky Menu';
+  };
+  attributes: {
+    logo: Schema.Attribute.Component<'elements.logo', false>;
+    navigation: Schema.Attribute.Component<'elements.link', true>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -330,6 +343,7 @@ declare module '@strapi/strapi' {
       'blocks.paragraph': BlocksParagraph;
       'blocks.paragraph-with-image': BlocksParagraphWithImage;
       'blocks.services-accordion-block': BlocksServicesAccordionBlock;
+      'blocks.sticky-menu': BlocksStickyMenu;
       'blocks.testimonials-block': BlocksTestimonialsBlock;
       'blocks.vertical-accordion-block': BlocksVerticalAccordionBlock;
       'blocks.vertical-accordion-item': BlocksVerticalAccordionItem;

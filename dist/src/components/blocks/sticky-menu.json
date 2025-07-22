@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_blocks_sticky_menus",
+    "info": {
+        "displayName": "Sticky Menu"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "navigation": {
+            "type": "component",
+            "component": "elements.link",
+            "repeatable": true
+        },
+        "logo": {
+            "type": "component",
+            "component": "elements.logo",
+            "repeatable": false
+        }
+    },
+    "config": {}
+}

@@ -24,7 +24,9 @@
         "blocks.hero-section",
         "blocks.featured-article",
         "blocks.about-section",
-        "blocks.about-info"
+        "blocks.about-info",
+        "blocks.heading",
+        "blocks.sticky-menu"
       ]
     },
     "slug": {
