@@ -51,6 +51,16 @@
                 "blocks.heading",
                 "blocks.full-image"
             ]
+        },
+        "articleOfTheDay": {
+            "type": "boolean",
+            "default": false
+        },
+        "categories": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::category.category",
+            "mappedBy": "article"
         }
     }
 }

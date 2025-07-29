@@ -17,6 +17,11 @@
             "type": "component",
             "component": "elements.logo",
             "repeatable": false
+        },
+        "hamnavigation": {
+            "type": "component",
+            "component": "elements.link",
+            "repeatable": true
         }
     },
     "config": {}

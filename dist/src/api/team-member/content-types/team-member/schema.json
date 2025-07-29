@@ -1,0 +1,53 @@
+{
+    "kind": "collectionType",
+    "collectionName": "team_members",
+    "info": {
+        "singularName": "team-member",
+        "pluralName": "team-members",
+        "displayName": "Team member"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "FullName": {
+            "type": "string"
+        },
+        "JobTitle": {
+            "type": "string"
+        },
+        "ProfileImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "FullName"
+        },
+        "Bio": {
+            "type": "richtext"
+        },
+        "LinkedInUrl": {
+            "type": "string"
+        },
+        "blocks": {
+            "type": "dynamiczone",
+            "components": [
+                "blocks.sticky-menu",
+                "blocks.hero-section",
+                "blocks.about-info"
+            ]
+        },
+        "CoverImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        }
+    }
+}

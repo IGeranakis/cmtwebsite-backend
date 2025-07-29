@@ -26,7 +26,8 @@
         "blocks.about-section",
         "blocks.about-info",
         "blocks.heading",
-        "blocks.sticky-menu"
+        "blocks.sticky-menu",
+        "blocks.team-grid"
       ]
     },
     "slug": {
